@@ -4,3 +4,12 @@ body {
     background: black; /* cor fundo */
     color: white ; /* cor textos */
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none; /* estilo lista */
+}
