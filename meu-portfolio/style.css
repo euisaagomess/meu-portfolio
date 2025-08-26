@@ -13,3 +13,24 @@ a {
 ul {
     list-style: none; /* estilo lista */
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgb(115, 32, 192);
+    border-bottom: 5px solid white;
+}
+
+.menu-desktop {
+    background: blue;
+    display: none;
+}
+
+/* Medidas Responsivas */
+@media (min-width: 768px) {
+    .menu-desktop {
+        display: flex;
+    }
+}
