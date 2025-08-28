@@ -5,17 +5,29 @@
     --cor-fundo: #1b1b1b;
     --cor-texto:#e9e9e9;
 
+    --menu-lik: rgb(255, 255, 255);
+    --cor-borda: rgb(249, 249, 250);
 }
 
+:root[data-theme='light'] {
+    --cor-fundo: rgb(228, 212, 245);
+    --cor-texto: rgb(249, 246, 250) ;
+    
+    --menu-lik: rgb(246, 243, 247);
+}   
+
+
 body {
-    background: ; /* cor fundo */
-    color: white ; /* cor textos */
+    background: var(--cor-fundo); /* cor fundo */
+    color: var(--cor-texto) ; /* cor textos */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
-    color: white;
+    color: var(--menu-link) ;
     text-decoration: none;
+
+
 }
 
 ul {
@@ -27,12 +39,12 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: rgb(115, 32, 192);
-    border-bottom: 5px solid white;
+    background: rgb(95, 39, 247);
+    border-bottom: 5px solid var(--cor-borda);
 }
 
 .menu-desktop {
-    background: blue;
+    background: rgb(95, 39, 247);
     display: none;
 }
 
