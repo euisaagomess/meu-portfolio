@@ -13,7 +13,7 @@
     --cor-fundo: rgb(228, 212, 245);
     --cor-texto: rgb(249, 246, 250) ;
     
-    --menu-lik: rgb(246, 243, 247);
+    --menu-lik: rgb(39, 35, 41);
 }   
 
 
@@ -48,9 +48,41 @@ header {
     display: none;
 }
 
+/* NAV = Ul//OL */
+.menu {
+    display: flex; /* FLEX EFEITO SANFONA - EM LINHA HORI */
+    gap: 1rem; /* cada rem equivale a 16px */ /* espaço entre as palavras */
+    align-items: center; /* alinha os objetos na vertical */
+    
+}
+
+/* li - listas */
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+   color: var(--menu-lik);
+   font-size: 1.3rem;
+   text-transform: uppercase; /* caps lock */
+}
+
+/* Menu Hamburguer - botao menu mobile */
+
+
+
+
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
     }
 }
+
