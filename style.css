@@ -13,7 +13,7 @@
     --cor-fundo: rgb(228, 212, 245);
     --cor-texto: rgb(249, 246, 250) ;
     
-    --menu-lik: rgb(39, 35, 41);
+    --menu-lik: rgb(40, 13, 54);
 }   
 
 
@@ -39,12 +39,12 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: rgb(95, 39, 247);
+    background: rgb(133, 94, 240);
     border-bottom: 5px solid var(--cor-borda);
 }
 
 .menu-desktop {
-    background: rgb(95, 39, 247);
+    background: rgb(133, 94, 240);
     display: none;
 }
 
@@ -73,9 +73,22 @@ header {
    text-transform: uppercase; /* caps lock */
 }
 
-/* Menu Hamburguer - botao menu mobile */
+/* Menu Hamburger - botao menu mobile */
+#menuHamburger {
+    margin-left: 1rem;
+}
 
-
+.btn-menu-mobile {
+    background: transparent;
+    border: none; /* remover as bordas */
+    cursor: pointer; /* trocar o ícone do mouse */
+    color: var(--cor-texto);
+    display: flex; /* quebra de linha */
+    font-size: 1.8rem; /* aumentar icone */
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
 
 
 
@@ -83,6 +96,10 @@ header {
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
+    }
+
+    .btn-menu-mobile {
+        display: none; /* aquilo que n for celular irei remover da minha tela */
     }
 }
 
