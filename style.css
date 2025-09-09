@@ -7,6 +7,7 @@
 
     --menu-lik: rgb(255, 255, 255);
     --cor-borda: rgb(249, 249, 250);
+    --cor-borda: white;
 }
 
 :root[data-theme='light'] {
@@ -14,6 +15,7 @@
     --cor-texto: rgb(249, 246, 250) ;
     
     --menu-lik: rgb(40, 13, 54);
+    --cor-borda: rgb(40, 13, 54);
 }   
 
 
@@ -90,16 +92,60 @@ header {
     padding: 0.5rem;
 }
 
+.menu-mobile { /* nav */
+    position: fixed;
+    top: 0px;
+    right: 0;
+    background: var(--cor-fundo);
+    width: 75%;
+    height: 100vh; /* viewPort Altura  */
+    border-left: 1px solid var(--cor-borda);
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    transition: .3s ease-in-out; /* voltar aqui */
+    transform: translateX(100%);
+}
 
+/* Ativar o menu mobile */
+.menu-mobile.active {
+    transform: translateX(0%);
+}
+
+.menu-mobile /* nav */
+ .menu-list /* ul */{
+    display: flex;
+    flex-direction: column;   /* eixo y = vertical */
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1rem 2rem;
+}
+
+.menu-mobile .menu-item {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-mobile .menu-link {
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+    
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
+        min-width: 30%;
     }
 
     .btn-menu-mobile {
         display: none; /* aquilo que n for celular irei remover da minha tela */
     }
+    .header-toggle {
+        min-width: 30%;
+    } 
 }
 
