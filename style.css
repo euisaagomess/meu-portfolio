@@ -136,6 +136,17 @@ header {
     
 }
 
+.logo {
+    width: 3.8rem; /* COMPRIMENTO */
+    height: 4.3rem; /* ALTURA */
+}
+
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
