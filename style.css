@@ -20,7 +20,16 @@
     
 }   
 
+/* inverter cor logo */
+html[data-theme='light'] .logo {
+    filter: invert(0);
+}
 
+/* reset css - padronizar */ /* seletor universal */
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background: var(--cor-fundo); /* cor fundo */
     color: var(--cor-texto);  /* cor textos */
@@ -45,6 +54,8 @@ header {
     width: 100%;
     background: rgb(56, 37, 110);
     border-bottom: 5px solid var(--cor-borda);
+    position: fixed; /* voltar */
+    z-index: 9999;
 }
 
 .menu-desktop {
@@ -137,8 +148,8 @@ header {
 }
 
 .logo {
-    width: 3.8rem; /* COMPRIMENTO */
-    height: 4.3rem; /* ALTURA */
+    width: 3.0rem; /* COMPRIMENTO */
+    height: 5.2rem; /* ALTURA */
 }
 
 .header-toggle {
