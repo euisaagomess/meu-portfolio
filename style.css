@@ -158,6 +158,10 @@ header {
     align-items: center;
 }
 
+#home{
+    padding: 6.5rem 1rem;
+}
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
