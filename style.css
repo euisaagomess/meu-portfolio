@@ -276,15 +276,17 @@ h1 {
 
 .card-descricao {
     color: #edf1ed;
-    font-size: 2rem; /* tamanho texto */
-    font-weight: 1rem; /* LARGURA DOS TEXTOS */
-    font-family: "Bebas Neue", sans-serif; /* estilo das fontes */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 8rem;
+    font-size: 2rem;
+    
+
 }
 
 .card-list {
     color: #8b0ac7;
-    font-size: ; /* tamanho texto */
-    font-weight: ; /* LARGURA DOS TEXTOS */
+    font-size: 1rem; /* tamanho texto */
+    font-weight: 0.5rem; /* LARGURA DOS TEXTOS */
     font-family: ; /* estilo das fontes */
 
 }
