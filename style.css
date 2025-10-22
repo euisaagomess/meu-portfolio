@@ -310,8 +310,19 @@ h3 {
 
 }
 
+
+
 /* Medidas Responsivas */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 6rem;
+    }
+}
+
+    
+
 @media (min-width: 768px) {
+
 
     .menu-desktop {
         display: flex;
