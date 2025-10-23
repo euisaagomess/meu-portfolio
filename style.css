@@ -12,6 +12,8 @@
     --menu-lik: rgb(255, 255, 255);
     --cor-borda: rgb(249, 249, 250);
     --cor-borda: white;
+
+    --cor-hover-icone: rgb(175, 50, 248);
 }
 
 :root[data-theme='light'] {
@@ -21,7 +23,7 @@
     --menu-lik: rgb(253, 253, 253);
     --cor-borda: rgb(253, 250, 255);
 
-
+    --cor-hover-icone: rgb(73, 20, 94) ;
 }
 
 /* inverter cor logo */
@@ -314,7 +316,20 @@ h3 {
 
 }
 
+.card-item i {
+    margin-right: 8px;
+}
 
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: 0.5s ease-in-out;
+}
+
+.redes-sociais i:hover {
+    font-size: 1.5rem;
+    color: var(--cor-hover-icone);
+    transition: 0.5s ease-in-out;
+}
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
